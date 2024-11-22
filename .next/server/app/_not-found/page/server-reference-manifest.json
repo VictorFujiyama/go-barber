@@ -1,4 +1,38 @@
 {
-  "node": {},
+  "node": {
+    "003fc5c175bab2f3d53765278dfe19e659c151c8f6": {
+      "workers": {
+        "app/_not-found/page": {
+          "moduleId": "[project]/.next-internal/server/app/_not-found/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/shared/cookies/themeCookies.ts [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/_not-found/page": "rsc"
+      }
+    },
+    "40c4963251ddac4899ab4d7df14154de92b0d31693": {
+      "workers": {
+        "app/_not-found/page": {
+          "moduleId": "[project]/.next-internal/server/app/_not-found/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/shared/cookies/themeCookies.ts [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/_not-found/page": "rsc"
+      }
+    },
+    "003513374dbe48a921634b76ad6ff7a6fb4ca95bbd": {
+      "workers": {
+        "app/_not-found/page": {
+          "moduleId": "[project]/.next-internal/server/app/_not-found/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/shared/cookies/themeCookies.ts [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/_not-found/page": "rsc"
+      }
+    }
+  },
   "edge": {}
 }

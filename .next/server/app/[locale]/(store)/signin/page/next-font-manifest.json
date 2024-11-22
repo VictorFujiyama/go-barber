@@ -1,0 +1,10 @@
+{
+  "pages": {},
+  "app": {
+    "[project]/src/app/[locale]/(store)/signin/page": [
+      "static/media/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC-s.p.f271a2dc.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pagesUsingSizeAdjust": false
+}

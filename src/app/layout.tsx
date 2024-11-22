@@ -1,25 +1,40 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
+import { cookiesThemeGet } from "@/shared/cookies/themeCookies";
+import "@/shared/theme/global.css";
+import type { Metadata } from "next";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { Roboto_Slab } from "next/font/google";
+import { ReactNode } from "react";
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  weight: ['400', '700'],
-})
+const RobotoSlab = Roboto_Slab({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'gobarber',
+  title: "gobarber",
+};
+
+interface RootLayoutProps {
+  children: ReactNode;
+  params: { locale: string };
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+  params: { locale },
+}: RootLayoutProps) {
+  const theme = await cookiesThemeGet();
+  const messages = await getMessages();
+
   return (
-    <html className={`${inter.variable} antialiased`} lang="pt">
-      <body className="bg-zinc-950 text-zinc-50 antialiased">{children}</body>
+    <html lang={locale}>
+      <body className={`${RobotoSlab.className} ${theme}`}>
+        <NextIntlClientProvider
+          locale={locale}
+          messages={messages}
+          timeZone="America/Sao_Paulo"
+        >
+          {children}
+        </NextIntlClientProvider>
+      </body>
     </html>
-  )
+  );
 }
