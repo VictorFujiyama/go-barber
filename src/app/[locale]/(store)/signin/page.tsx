@@ -42,7 +42,7 @@ export default function Home() {
   return (
     <div className="flex h-screen">
       {/* Div para a área de login ocupando 40% da tela */}
-      <div className="w-2/5 bg-blue flex items-center justify-center">
+      <div className="w-2/5 bg-red flex items-center justify-center">
         <div className="flex flex-col items-center justify-center">
           {/* Seção de logos com espaçamento fixo */}
           <div className="flex flex-col items-center space-y-4">
