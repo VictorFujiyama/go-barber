@@ -1,3 +1,5 @@
+import { colors } from './src/shared/theme/colors'
+import { fontFamily, fontSize } from './src/shared/theme/font'
 import type { Config } from 'tailwindcss'
 
 export default {
@@ -7,9 +9,9 @@ export default {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    fontFamily: {
-      sans: 'var(--font-inter)',
-    },
+    colors,
+    fontSize,
+    fontFamily,
   },
   plugins: [],
 } satisfies Config

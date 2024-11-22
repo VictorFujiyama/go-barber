@@ -1,0 +1,17 @@
+export const colors = {
+  primary: 'var(--primary)',
+  secondary: 'var(--secondary)',
+  gray1: 'var(--gray1)',
+  gray2: 'var(--gray2)',
+  gray3: 'var(--gray3)',
+  gray4: 'var(--gray4)',
+  gray5: 'var(--gray5)',
+  yellow: 'var(--yellow)',
+  green: 'var(--green)',
+  red: 'var(--red)',
+  white: 'var(--white)',
+  orange: 'var(--orange)',
+  blue: 'var(--blue)',
+  darkWhite: 'var(--darkWhite)',
+  darkBlack: 'var(--darkBlack)',
+}
