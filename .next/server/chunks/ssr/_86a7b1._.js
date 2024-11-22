@@ -15,8 +15,8 @@ function Home() {
         children: "sign up page"
     }, void 0, false, {
         fileName: "[project]/src/app/(store)/signup/page.tsx",
-        lineNumber: 3,
-        columnNumber: 7
+        lineNumber: 2,
+        columnNumber: 10
     }, this);
 }
 }}),

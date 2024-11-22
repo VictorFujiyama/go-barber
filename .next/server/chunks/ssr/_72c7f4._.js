@@ -15,8 +15,8 @@ function Home() {
         children: "go barber app"
     }, void 0, false, {
         fileName: "[project]/src/app/(store)/page.tsx",
-        lineNumber: 3,
-        columnNumber: 5
+        lineNumber: 2,
+        columnNumber: 10
     }, this);
 }
 }}),
